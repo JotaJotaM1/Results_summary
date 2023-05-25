@@ -168,12 +168,12 @@ span {
 }
 
 button {
-  height: 50px;
-  background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
-  border: none;
-  border-radius: 2rem;
-  color: var(--White);
-  font-weight: 700;
+    height: 50px;
+    background: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+    border: none;
+    border-radius: 2rem;
+    color: var(--White);
+    font-weight: 700;
 }
 
 @media screen and (min-width:650px) {
@@ -210,7 +210,7 @@ button {
         margin-bottom: 30px;
     }
 
-    h2{
+    h2 {
         margin-top: 2rem;
     }
 
