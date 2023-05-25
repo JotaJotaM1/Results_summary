@@ -1,4 +1,214 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700;800&display=swap');
 
-:root
+:root {
+    --Light_red: hsl(0, 100%, 67%);
+    --Orangey_yellow: hsl(39, 100%, 56%);
+    --Green_teal: hsl(166, 100%, 37%);
+    --Cobalt_blue: hsl(234, 85%, 45%);
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    background-color: var(--Pale-blue);
+}
+
+
+
+.containerGeneral {
+    background-color: var(--White);
+    border-radius: 2rem;
+    height: 100vh;
+}
+
+.result {
+    background: linear-gradient(to bottom,
+            var(--Light-slate-blue-background),
+            var(--Light-royal-blue-background));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 2rem 2rem;
+    padding: 1.5rem 2rem;
+}
+
+h3 {
+    color: var(--Light-lavender);
+    font-size: 1.2rem;
+}
+
+.result .circleNum {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Persian-blue-circle));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.circle,
+h1 {
+    color: var(--White);
+    font-size: 4rem;
+}
+
+.circle,
+p {
+    color: var(--Light-lavender);
+}
+
+h2 {
+    color: var(--White);
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+.info {
+    width: 250px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.4rem;
+    margin-top: 18px;
+}
+
+.summary {
+    padding: 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.titleSumary {
+    color: black;
+    font-weight: 800;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.containRows {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0.5rem;
+    gap: 0.8rem;
+}
+
+.containRowsImgP {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.containRows:nth-child(1) {
+    background-color: hsla(0, 100%, 67%, 0.2);
+}
+
+.containRows:nth-child(2) {
+    background-color: hsla(39, 100%, 56%, 0.2);
+}
+
+.containRows:nth-child(3) {
+    background-color: hsla(166, 100%, 37%, 0.2);
+}
+
+.containRows:nth-child(4) {
+    background-color: hsla(234, 85%, 45%, 0.2);
+}
+
+.text1 {
+    color: var(--Light_red);
+    font-weight: 700;
+}
+
+.text2 {
+    color: var(--Orangey_yellow);
+    font-weight: 700;
+}
+
+.text3 {
+    color: var(--Green_teal);
+    font-weight: 700;
+}
+
+.text4 {
+    color: var(--Cobalt_blue);
+    font-weight: 700;
+}
+
+.firstNumber {
+    color: var(--Dark-gray-blue);
+    font-weight: 700;
+}
+
+span {
+    color: grey;
+    font-weight: 300;
+}
+
+button {
+    margin-top: auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width:650px) {
+
+    body {
+        min-height: 100vh;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--Pale-blue);
+    }
+
+    .card {
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+        border-radius: 2rem;
+        width: 650px;
+        background-color: var(--White);
+        
+
+    }
+
+    .containerGeneral {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+    }
+    .result{
+        border-radius: 2rem;
+    }
+
+    .summary {
+        width: 100%;
+        border-radius: 2rem;
+    }
+}
